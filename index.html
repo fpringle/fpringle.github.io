@@ -18,17 +18,20 @@
 			<div id="wrapper" class="divided">
 
 				<!-- Intro -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="spotlight style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Frederick Pringle</h1>
 							<p class="major">I am a passionate, hard-working, self-taught programmer and technology enthusiast, with a Master's degree in Mathematical and Theoretical Physics from the University of Oxford. I try to bring focus, dedication and intelligence to everything I do. Currently employed as a scientific researcher, I am looking for opportunities in the technology, software, research and related industries. I am skilled in several programming languages such as Python, C/C++, Haskell and Javascript; and have some experience in Ruby, TypeScript, and Rust. I believe I can be a valuable addition to any development or research team, and look forward to any opportunity to expand my skillset.</p>
 							<p class="major">Below you can find some samples of coding projects I have worked on in my free time, organised by language. You can also jump to the <a href="#aboutme">About Me</a> section or <a href="#contact">send me a message</a>.</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+								<li>
+                                    <a href="#first" class="button big wide smooth-scroll-middle">Get Started</a>
+                                    <a href="#first" class="button big wide smooth-scroll-middle primary">GitHub Profile</a>
+                                </li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/banner.jpg" alt="" />
+							<img src="images/FreddyCrop.jpg" alt="" />
 						</div>
 					</section>
 
@@ -38,18 +41,18 @@
 							<h2>Programming Languages</h2>
                             <p>These are my primary languages. Click on one of them to take a look at some projects I've worked on in that language.</p>
 							<div class="items style1 small onscroll-fade-in">
-                                <a href="#cpp" style="text-decoration:none">
-                                    <section>
-                                        <!-- <span class="icon solid style2 major fa-save"></span> -->
-                                        <h3>C++</h3>
-                                        <p>Most of my professional experience is in C++. It's what I use at work on a day-to-day basis, and is one of the languages I feel most comfortable in.</p>
-                                    </section>
-                                </a>
                                 <a href="#python" style="text-decoration:none">
                                     <section>
                                         <!-- <span class="icon style2 major fa-gem"></span> -->
                                         <h3>Python</h3>
                                         <p>Like many developers today, the first language I learned was Python. It's my go-to language for scripting, and offers the fastest time-to-MVP for concept testing.</p>
+                                    </section>
+                                </a>
+                                <a href="#cpp" style="text-decoration:none">
+                                    <section>
+                                        <!-- <span class="icon solid style2 major fa-save"></span> -->
+                                        <h3>C++</h3>
+                                        <p>Most of my professional experience is in C++. It's what I use at work on a day-to-day basis, and is one of the languages I feel most comfortable in.</p>
                                     </section>
                                 </a>
                                 <a href="#haskell" style="text-decoration:none">
@@ -70,31 +73,12 @@
 						</div>
 					</section>
 
-				<!-- C++ -->
-                    <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content" id="cpp">
-							<h1>C++</h1>
-							<h2>Strawberry</h2>
-							<p>Strawberry is a Chess engine and GUI written in C++. I think writing a Chess engine is a great way to improve mastery of a language, and C++ is the ideal high-performance language for the computation required for decent move search, while providing fine-grained memory management for caching results.</p>
-
-                            <p>Once I was happy with the core engine, I added a GUI to make the engine user-friendly. This was written in QT 5. I then added support for Strawberry to communicate via the Universal Chess Interace (UCI) protocol.</p>
-
-							<ul class="actions stacked">
-								<li>
-                                    <a href="https://github.com/fpringle/strawberry" target="_blank" class="button primary">GitHub Repo</a>
-                                    <a href="https://fpringle.github.io/strawberry/" target="_blank" class="button">Documentation</a>
-                                </li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
-						</div>
-					</section>
-
 				<!-- Python -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content" id="python">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="python">
+						<div class="content">
 							<h1>Python</h1>
+                            <hr>
+
 							<h2>Cybotify</h2>
                             <p>Cybotify is an ongoing project with the goal of increasing my proficiency in database management, machine learning, API development, and website design. The website uses Spotify's public "audio features" API to analyze user's playlists, categorising them according to themes such as accousticness, energy, key and tempo. In the future, the end goal of the project is to use machine learning to identify poorly-organised playlists, suggest alternate grouping of songs into playlist, and recommend new songs for playlists.</p>
 
@@ -113,15 +97,41 @@
 								<li><a href="https://github.com/fpringle/cybotify_mvp" target="_blank" class="button primary">GitHub Repo</a></li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
+						<div class="image" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center">
+							<img src="images/cybotify1.png" alt="" style="height:auto; width:98%; position:relative"/>
+							<img src="images/cybotify2.png" alt="" style="height:auto; width:98%; position:relative"/>
+							<img src="images/cybotify3.png" alt="" style="height:auto; width:98%; position:relative"/>
+						</div>
+					</section>
+
+				<!-- C++ -->
+                    <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="cpp">
+						<div class="content">
+							<h1>C++</h1>
+                            <hr>
+
+							<h2>Strawberry</h2>
+							<p>Strawberry is a Chess engine and GUI written in C++. I think writing a Chess engine is a great way to improve mastery of a language, and C++ is the ideal high-performance language for the computation required for decent move search, while providing fine-grained memory management for caching results.</p>
+
+                            <p>Once I was happy with the core engine, I added a GUI to make the engine user-friendly. This was written in QT 5. I then added support for Strawberry to communicate via the Universal Chess Interace (UCI) protocol.</p>
+
+							<ul class="actions stacked">
+								<li>
+                                    <a href="https://github.com/fpringle/strawberry" target="_blank" class="button primary">GitHub Repo</a>
+                                    <a href="https://fpringle.github.io/strawberry/" target="_blank" class="button">Documentation</a>
+                                </li>
+							</ul>
+						</div>
+						<div class="image" style="display: flex; flex-direction: column; justify-content: center">
+							<img src="images/strawberry.png" alt="" style="height:auto; width:100%; position:relative"/>
 						</div>
 					</section>
 
 				<!-- Haskell -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content" id="haskell">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="haskell">
+						<div class="content">
 							<h1>Haskell</h1>
+                            <hr>
 
 							<h2>haskell-sudoku</h2>
                             <p>One of my early Haskell projects was a library for solving Sudoku grids, combined with an executable that runs a Sudoku HTTP server. It was an interesting challenge to apply search algorithms, which are typically implemented in imperarive languages, in a pure functional language like Haskell. I also learned how to use the Warp and WAI libraries to design the server API.</p>
@@ -145,15 +155,17 @@
                                 </li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
+						<div class="image" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center">
+							<img src="images/sudoku1.png" alt="" style="height:auto; width:98%; position:relative"/>
+							<img src="images/pl0_1.png" alt="" style="height:auto; width:98%; position:relative"/>
 						</div>
 					</section>
 
 				<!-- JavaScript -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content" id="javascript">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="javascript">
+						<div class="content">
 							<h1>JavaScript</h1>
+                            <hr>
 
                             <h2>Stacked</h2>
                             <p>Stacked is a browser-based game written in JavaScript and inspired by <a href="https://github.com/AlexNisnevich/untrusted" target="_blank">Untrusted</a>. The player writes code in a custom imperative stack-based language to control the player character, who moves around a grid-based 2D map to avoid enemies and complete objectives.</p>
@@ -183,8 +195,11 @@
                                 </li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
+						<div class="image" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center">
+							<img src="images/stacked1.png" alt="" style="height:auto; width:80%; position:relative"/>
+							<img src="images/stacked2.png" alt="" style="height:auto; width:80%; position:relative"/>
+							<img src="images/q25.png" alt="" style="height:auto; width:80%; position:relative"/>
+							<img src="images/q251.png" alt="" style="height:auto; width:80%; position:relative"/>
 						</div>
 					</section>
 
@@ -194,7 +209,7 @@
 							<h2>About Me</h2>
                             <p>I was born in the UK and attended the University of Oxford, where I studied Mathematics for my bachelor's and Mathematical and Theoretical Physics for my master's degree.
 
-                            After graduating I attended the Space Studies Program at the <a href="https://www.isunet.edu/" target="_blank">International Space University</a> in Strasbourg, France.
+                            After graduating I joined the Space Studies Program at the <a href="https://www.isunet.edu/" target="_blank">International Space University</a> in Strasbourg, France.
 
                             I then moved to Munich, Germany to start a job working as a contractor at the German Space Agency (DLR). I worked as a Systems Controller, monitoring and maintaining the ground systems that allow research bodies, universities and private companies to communicate with their experiments onboard the Columbus module of the ISS.</p>
 
